@@ -26,7 +26,6 @@ public class CuartaSemana {
         ArrayList<Animal> animals = new ArrayList<Animal>();
         animals.add(p);
         animals.add(g);
-        animals.add(p1);
         animals.add(g1);
     }
 }
