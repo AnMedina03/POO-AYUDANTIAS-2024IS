@@ -16,6 +16,7 @@ public class CuartaSemana {
         // System.out.println(p.equals(p2));
         Animal a = new Animal("Firulais", 5, "Corgi");
         a.setAnimalProperties("Golde", 15, "Corgi");
+        /// SIIIIIUU
 
         Animal p = new Perro("Firulais", 5, "Corgi", "PEQUENIO");
         Animal g = new Gato("Firulais", 5, "Corgi", true);
