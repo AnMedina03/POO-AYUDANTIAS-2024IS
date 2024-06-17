@@ -1,7 +1,14 @@
 # Compiled class file
 *.class
+
 target/*
 ./target/*
+
+tmp/*
+./tmp/*
+
+src/main/java/tmp/*
+./src/main/java/tmp/*
 
 # Log file
 *.log

@@ -8,6 +8,14 @@ public class Gato extends Animal {
         this.cazador = cazador;
     }
 
+    public Gato(boolean cazador) {
+        this("Goldo", 4, "Romano", true);
+    }
+
+    public Gato(Animal a, boolean cazador) {
+        this.updateFields(a);
+    }
+
     public boolean isCazador() {
         return cazador;
     }
@@ -15,6 +23,12 @@ public class Gato extends Animal {
     public void setCazador(boolean cazador) {
         this.cazador = cazador;
     }
+    
+    @Override
+    public String jugar(Animal a) {
+         return this.getNombre() + " juega con " + a.getNombre() + "pero se aburren";
+    }
+
     
     @Override
     public boolean equals(Object o) {

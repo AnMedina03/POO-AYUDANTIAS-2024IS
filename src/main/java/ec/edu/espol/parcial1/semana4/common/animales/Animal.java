@@ -5,9 +5,6 @@ public class Animal {
     private int edad;
     private String raza;
     private boolean cansado;
-    private String nombre1;
-    private int edad1;
-    private String raza1;
 
     public Animal() {
         this("Firulais", 5, "Corgi");
@@ -36,25 +33,29 @@ public class Animal {
         return cansado;
     }
 
-    public void setNombre(String nombre) {
+    protected void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setEdad(int edad) {
+    protected void setEdad(int edad) {
         this.edad = edad;
     }
 
-    public void setRaza(String raza) {
+    protected void setRaza(String raza) {
         this.raza = raza;
     }
 
-    public void setCansado(boolean cansado) {
+    protected void setCansado(boolean cansado) {
         this.cansado = cansado;
     }
 
-    public void setAnimalProperties(String nombre, int edad, String raza) {
-        this.nombre1 = nombre;
-        this.edad1 = edad;
-        this.raza1 = raza;
+    protected void updateFields(Animal a) {
+        this.nombre = a.getNombre();
+        this.edad = a.getEdad();
+        this.raza = a.getRaza();
+    }
+
+    public String jugar(Animal a) {
+        return "JUEGA";
     }
 }
