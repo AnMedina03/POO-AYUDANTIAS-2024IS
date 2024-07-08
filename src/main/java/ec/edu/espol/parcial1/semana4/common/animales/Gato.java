@@ -23,12 +23,35 @@ public class Gato extends Animal {
     public void setCazador(boolean cazador) {
         this.cazador = cazador;
     }
+
+    public void cazar() {
+        System.out.println("Gato cazando porque sí...");
+    }
     
     @Override
     public String jugar(Animal a) {
          return this.getNombre() + " juega con " + a.getNombre() + "pero se aburren";
     }
 
+    @Override
+    public void caminar() {
+        System.out.println("El gato caminando");
+    }
+
+    @Override
+    public void correr() {
+        System.out.println("El gato corriendo");
+    }
+
+    @Override
+    public void saltar() {
+        if (this.cazador) {
+            System.out.println("El gato salta alto");
+        }
+        else {
+            System.out.println("El gato no puede saltar");
+        }
+    }
     
     @Override
     public boolean equals(Object o) {

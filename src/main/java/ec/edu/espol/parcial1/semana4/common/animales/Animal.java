@@ -1,6 +1,6 @@
 package ec.edu.espol.parcial1.semana4.common.animales;
 
-public class Animal {
+public abstract class Animal implements Movimiento, Comportamiento {
     private String nombre;
     private int edad;
     private String raza;
@@ -57,5 +57,20 @@ public class Animal {
 
     public String jugar(Animal a) {
         return "JUEGA";
+    }
+
+    @Override
+    public void dormir() {
+        System.out.println("Durmiendo...");
+    }
+
+    @Override
+    public void comer() {
+        System.out.println("Comiendo...");
+    }
+
+    @Override
+    public void observar() {
+        System.out.println("Observando...");
     }
 }
