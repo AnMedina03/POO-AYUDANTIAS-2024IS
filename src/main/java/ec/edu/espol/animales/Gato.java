@@ -1,4 +1,4 @@
-package ec.edu.espol.parcial1.semana4.common.animales;
+package ec.edu.espol.animales;
 
 public class Gato extends Animal {
     private boolean cazador;

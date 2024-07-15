@@ -2,8 +2,8 @@ package ec.edu.espol.parcial1.semana4;
 
 import java.util.ArrayList;
 
-import ec.edu.espol.parcial1.semana4.common.animales.*;
-import ec.edu.espol.parcial1.semana4.enums.DogSize;
+import ec.edu.espol.animales.*;
+import ec.edu.espol.enums.DogSize;
 
 public class CuartaSemana {
     public static void main() {

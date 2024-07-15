@@ -1,6 +1,6 @@
-package ec.edu.espol.parcial1.semana4.common.animales;
+package ec.edu.espol.animales;
 
-import ec.edu.espol.parcial1.semana4.enums.DogSize;
+import ec.edu.espol.enums.DogSize;
 
 public class Perro extends Animal implements Comparable<Perro> {
     private DogSize tamanio;
@@ -99,5 +99,10 @@ public class Perro extends Animal implements Comparable<Perro> {
         // return c1 && c2 && c3;
         return e.getNombre().equals(this.getNombre()) && e.getEdad() >= this.getEdad()
         && e.getRaza().equals(this.getRaza());
+    }
+
+    @Override
+    public String toString() {
+        return this.getNombre()+','+this.getEdad()+','+this.getRaza()+','+this.getTamanio().toString() + '\n';
     }
 }

@@ -1,7 +1,7 @@
 package ec.edu.espol.parcial1.semana6;
 
-import ec.edu.espol.parcial1.semana4.common.animales.*;
-import ec.edu.espol.parcial1.semana4.enums.DogSize;
+import ec.edu.espol.animales.*;
+import ec.edu.espol.enums.DogSize;
 
 public class SextaSemana {
     public static void main(String[] args) {

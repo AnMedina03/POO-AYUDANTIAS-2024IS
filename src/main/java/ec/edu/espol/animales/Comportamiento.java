@@ -1,4 +1,4 @@
-package ec.edu.espol.parcial1.semana4.common.animales;
+package ec.edu.espol.animales;
 
 public interface Comportamiento {
     public void dormir();

@@ -1,4 +1,4 @@
-package ec.edu.espol.parcial1.semana4.common.animales;
+package ec.edu.espol.animales;
 
 public abstract class Animal implements Movimiento, Comportamiento {
     private String nombre;
@@ -72,5 +72,10 @@ public abstract class Animal implements Movimiento, Comportamiento {
     @Override
     public void observar() {
         System.out.println("Observando...");
+    }
+
+    @Override
+    public void caminar() {
+        System.out.println("A");
     }
 }

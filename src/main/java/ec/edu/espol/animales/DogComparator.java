@@ -1,8 +1,8 @@
-package ec.edu.espol.parcial1.semana4.common.animales;
+package ec.edu.espol.animales;
 
 import java.util.Comparator;
 
-import ec.edu.espol.parcial1.semana4.enums.DogSize;
+import ec.edu.espol.enums.DogSize;
 
 public class DogComparator implements Comparator<Perro> {
     @Override
